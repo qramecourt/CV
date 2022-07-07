@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script><!--permet de charger le HTML AVANT le JS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>quentin ramecourt's Resume</h1>
+    <!--infos personnelles-->
+    <header class="banner">
+        <div class="img"></div>
+        <!--prise de photo a mon avantage-->
+        <div class="persoInfo">
+            <ul>
+                <li><strong>nom: </strong>quentin Ramecourt</li>
+                <li><strong>Adresse: </strong>71-1 rue Jules Guesde</li>
+                <li><strong>code postal:</strong> 62800</li>
+                <li><strong>ville: </strong>Liévin</li>
+                <li><strong>mail: </strong>pro.quentin.ramecourt@gmail.com</li>
+                <li><strong>téléphone: </strong>06 45 81 48 27</li>
+            </ul>
+        </div><!--personnal info-->
+    </header>
+    <div><!--skills with images that are links to personnal projects-->
+        
+    </div>
+
+    <div></div>
+   
+    <div></div><!--education journey-->
+
+    <div></div><!--about me-->
+    
+    <div class="">
+        <button id="contactButton" class="button" onclick="showForm()">
+            me contacter
+        </button>
+    </div><!--button to show the form when clicked on-->
+
+    <div id="register">
+        <form  action="" method="post"> 
+    
+            <div> <!--name-->
+                <label for="name">votre nom: </label>
+                <input type="text" name="name" id="name" placeholder="quentin ramecourt" required>
+            </div>
+        
+            <div>
+                <label for="company">le nom de votre entreprise: </label>
+                <input type="text" name="company" id="company" placeholder="trucmuche" required>
+            </div>
+        
+            <div>
+                <label for="mail">votre mail: </label>
+                <input type="email" name="mail" id="mail" placeholder="pro.quentin.ramecourt@gmail.com" required>
+            </div>
+        
+            <div>
+                <label for="phone">votre numéro de téléphone</label>
+                <input type="text" name="phone" id="number" pattern="[0-9]{10}" placeholder="03210202000">
+            </div>
+        </form>
+        <div>
+            <button id="buttonDelete" class="button" onclick="hideForm()">cacher le formulaire</button>
+        </div>
+        <div>
+            <button id="buttonSend" class="button" onclick="sendForm()">envoyer un e-mail</button>
+        </div>
+        
+    </div><!--contact form-->
+</body>
+</html> 
