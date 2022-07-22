@@ -1,4 +1,4 @@
-
+document.getElementById('buttonSend');
 
 
  document.getElementById('register').style.visibility='hidden';
@@ -16,5 +16,6 @@ function hideForm() {
 
 //send data to the PHP (todo)
 function sendForm() {
-    document.getElementById('buttonSend')
+    document.querySelector("#text").innerHTML="cette fonction est en cours de dveloppement"   
 }
+document.addEventListener("click",sendForm)

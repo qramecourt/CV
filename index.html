@@ -25,14 +25,38 @@
             </ul>
         </div><!--personnal info-->
     </header>
+    <h4>compétences</h4>
     <div class="skills"><!--skills with images that are links to personnal projects-->
-        <h4>compétences</h4>
-        <div></div><!--python-->
-        <div></div><!--javascript-->
-        <div></div><!--HTML-->
-        <div></div><!--CSS-->
-        <div></div><!--PHP-->
-        <div></div><!--symfony-->
+        
+        <div class="img">
+            <img src="/misc/python.jpeg"
+            alt="croix à quatre branche avec celles en haut et à gauche bleues, 
+            et celles en bas et à droite jaunes">
+        </div ><!--python-->
+        <div class="img">
+            <img src="/misc/javascript.png" alt="médaillon jaune avec JS noté en blanc au centre">
+        </div><!--javascript-->
+        <div clas="img">
+            <img src="/misc/html.png" alt="médaillon orange avec html 5 noté en blanc au centre">
+        </div><!--HTML-->
+        <div class="img">
+            <img src="/misc/css.png" alt="médaillon bleu avec CSS 3 noté en blanc au centre">
+        </div><!--CSS-->
+        <div class="img">
+            <img src="/misc/php.png" alt="ovale bleu avec PHP écrit au milieu">
+        </div><!--PHP-->
+        <div  class="img">
+            <img src="/misc/symfony.jpeg" alt="cercle noir plein avec les lettres sf blanches en son centre">
+        </div><!--symfony-->
+        <div  class="img">
+            <img src="/misc/vuejs.png" alt="lettre V verte en majuscule">
+        </div><!--vuejs-->
+        <div  class="img">
+            <img src="/misc/tailwind.png" alt="deux vagues bleues l'une sur l'autre">
+        </div><!--tailwind-->
+        <div  class="img">
+            <img src="/misc/wordpress.jpeg" alt="cercle bleu plein avec un W majuscule au centre">
+        </div  class="img"><!--wordpress-->
     </div>
     
     <div><!--professionnal experience-->
@@ -158,12 +182,18 @@
                 <label for="phone">votre numéro de téléphone</label>
                 <input type="text" name="phone" id="number" pattern="[0-9]{10}" placeholder="03210202000">
             </div>
+            <div>
+                
+                <textarea name="feedback" id="feedback" cols="50" rows="10" 
+                placeholder="veuillez noter ici les remarques  à faire sur ce CV">remarques particulières</textarea>
+            </div>
         </form>
         <div>
             <button id="buttonDelete" class="button" onclick="hideForm()">cacher le formulaire</button>
         </div>
         <div>
             <button id="buttonSend" class="button" onclick="sendForm()">envoyer un e-mail</button>
+            <p id="text"></p>
         </div>
         
     </div><!--contact form-->

@@ -30,8 +30,10 @@ thead, h4 {
 }
 
 .skills {
-    background-color: blueviolet;
-    
+   
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
+
 }
 h1  {
     background-color: aquamarine;
@@ -41,6 +43,13 @@ table {
     width: 100vh;
     margin-left: auto;
     margin-right: auto;
+}
+img {
+    width: 100px;
+    height:100px;
+}img:hover {
+    width: 150px;
+    height:150px
 }
 
 
