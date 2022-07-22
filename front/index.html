@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script><!--permet de charger le HTML AVANT le JS-->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>curriculum vitae</title>
 </head>
 <body>
-    <h1>quentin ramecourt's Resume</h1>
+    <h1>CV de quentin Ramecourt</h1>
     <!--infos personnelles-->
     <header class="banner">
         <div class="img"></div>
@@ -25,30 +25,55 @@
             </ul>
         </div><!--personnal info-->
     </header>
-    <div><!--skills with images that are links to personnal projects-->
-        
+    <div class="skills"><!--skills with images that are links to personnal projects-->
+        <h4>compétences</h4>
+        <div></div><!--python-->
+        <div></div><!--javascript-->
+        <div></div><!--HTML-->
+        <div></div><!--CSS-->
+        <div></div><!--PHP-->
+        <div></div><!--symfony-->
     </div>
-    <h4>expérience professionnelle</h4>
+    
+    <div><!--professionnal experience-->
+        <h4>expérience professionnelle</h4>
         <table>
-            <thead>
+            <thead class="header">
                 <tr>
                     <td>années</td>
                     <td>descriptif du poste</td>
                     <td>entreprise</td>
                 </tr>
+            </thead>    
             <tbody>
                 <tr>
-                    <td>202</td>
-                    <td>rgor</td>
-                    <td>orroterpzs</td>
+                    <td>mai-juin 2019</td>
+                    <td>VRP (vente de box internet en porte-à-porte)</td>
+                    <td>Stratygo(Wasquehal)</td>
                 </tr>
-                <tr></tr>
-                <tr></tr>
+                <tr>
+                    <td>janvier-février 2019</td>
+                    <td>VRP (vente de box internet en porte-à-porte)</td>
+                    <td>Market'Inc</td>
+                </tr>
+                <tr>
+                    <td>septembre-octobre 2018</td>
+                    <td>controleur qualité en industrie du Caoutchouc</td>
+                    <td>Pronal (Leers)</td>
+                </tr>
+                <tr>
+                    <td>mai-juin 2018</td>
+                    <td>techicien qualité métrologue</td>
+                    <td>RPC bramlage (La-Roche-Sur-Foron)</td>
+                </tr>
+                <tr>
+                    <td>juin-octobre 2017</td>
+                    <td>technicien support fabrication en recyclage de bouteilles PET</td>
+                    <td>France Plastiques Recyclage (Limay)</td>
+                </tr>
             </tbody>
-            </thead>
+            
         </table>
-    <div><!--professionnal experience-->
-
     </div>
    
     <div>
@@ -56,26 +81,54 @@
         <table>
             <thead>
                 <tr>
+                    <td>année</td>
+                    <td>diplome</td>
+                    <td>établissement</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>février-octobre 2022</td>
+                    <td>titre professionnel développeur web</td>
+                    <td>POP school (lens)</td>
+                </tr>
+                <tr>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
                     <td></td><!--licence pro-->
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
+                    <td></td><!--licence pro-->
                     <td></td>
-                    td
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td><!--bts-->
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
     </div><!--education journey-->
 
-    <div></div><!--about me-->
+    <div>
+        <h4>à propos de moi</h4>
+        <ul>
+            <li>curieux</li>
+            <li>sociable</li>
+            <li>pargmatique</li>
+        </ul>
+    </div><!--about me-->
     
     <div class="">
         <button id="contactButton" class="button" onclick="showForm()">

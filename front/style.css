@@ -17,15 +17,29 @@ h1 {
 .register {
     visibility: hidden;
 }
-table {
+table, tr, td {
     border: 1px solid black;
     background-color: antiquewhite;
     padding: 10px;
-    border-collapse: separate;
+ 
     
 }
 thead, h4 {
     text-align:center;
+
+}
+
+.skills {
+    background-color: blueviolet;
+}
+h1  {
+    background-color: aquamarine;
+   
+}
+table {
+    width: 100vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
