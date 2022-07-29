@@ -18,4 +18,4 @@ function hideForm() {
 function sendForm() {
     document.querySelector("#text").innerHTML="cette fonction est en cours de dveloppement"   
 }
-document.addEventListener("click",sendForm)
+document.querySelector('#buttonSend').addEventListener("click",sendForm)

@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/front/script.js" defer></script><!--permet de charger le HTML AVANT le JS-->
     <link rel="stylesheet" href="/front/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
     <title>curriculum vitae</title>
 </head>
 <body>
     <h1>CV de quentin Ramecourt</h1>
     <!--infos personnelles-->
     <header class="banner">
-        <div class="photo"></div>
-        <!--prise de photo a mon avantage-->
+        <div class="photo">
+            <img src="/misc/index.jpeg" id ="photo" alt="main de femme tenant une fleur blanche">
+        </div><!--prise de photo a mon avantage-->
+
         <div class="persoInfo">
             <ul>
                 <li><strong>nom: </strong>quentin Ramecourt</li>
@@ -25,40 +30,40 @@
             </ul>
         </div><!--personnal info-->
     </header>
-    <h4>compétences</h4>
+    <div class="profile">
     <div class="skills"><!--skills with images that are links to personnal projects-->
-        
-        <div class="img">
+        <h4>compétences</h4>
+        <div class="language">
             <img src="/misc/python.jpeg"
             alt="croix à quatre branche avec celles en haut et à gauche bleues, 
             et celles en bas et à droite jaunes">
         </div ><!--python-->
-        <div class="img">
+        <div class="language">
             <img src="/misc/javascript.png" alt="médaillon jaune avec JS noté en blanc au centre">
         </div><!--javascript-->
-        <div clas="img">
+        <div clas="language">
             <img src="/misc/html.png" alt="médaillon orange avec html 5 noté en blanc au centre">
         </div><!--HTML-->
-        <div class="img">
+        <div class="language">
             <img src="/misc/css.png" alt="médaillon bleu avec CSS 3 noté en blanc au centre">
         </div><!--CSS-->
-        <div class="img">
+        <div class="language">
             <img src="/misc/php.png" alt="ovale bleu avec PHP écrit au milieu">
         </div><!--PHP-->
-        <div  class="img">
+        <div  class="language">
             <img src="/misc/symfony.jpeg" alt="cercle noir plein avec les lettres sf blanches en son centre">
         </div><!--symfony-->
         <div  class="img">
             <img src="/misc/vuejs.png" alt="lettre V verte en majuscule">
         </div><!--vuejs-->
-        <div  class="img">
+        <div  class="language">
             <img src="/misc/tailwind.png" alt="deux vagues bleues l'une sur l'autre">
         </div><!--tailwind-->
-        <div  class="img">
+        <div  class="language">
             <img src="/misc/wordpress.jpeg" alt="cercle bleu plein avec un W majuscule au centre">
-        </div  class="img"><!--wordpress-->
+        </div><!--wordpress-->
     </div>
-    
+    <div class="cursusExpe">
     <div><!--professionnal experience-->
         <h4>expérience professionnelle</h4>
         <table>
@@ -99,7 +104,7 @@
             
         </table>
     </div>
-   
+
     <div>
         <h4>cursus</h4>
         <table>
@@ -144,7 +149,8 @@
             </tbody>
         </table>
     </div><!--education journey-->
-
+</div>
+</div>  
     <div>
         <h4>à propos de moi</h4>
         <ul>
@@ -152,7 +158,8 @@
             <li>sociable</li>
             <li>pargmatique</li>
         </ul>
-    </div><!--about me-->
+    </div>
+    <!--about me-->
     
     <div class="">
         <button id="contactButton" class="button" onclick="showForm()">
@@ -189,13 +196,16 @@
             </div>
         </form>
         <div>
+            <button id="buttonDowload" class="button">télécharger le CV</button>
+        </div>
+        <div>
             <button id="buttonDelete" class="button" onclick="hideForm()">cacher le formulaire</button>
         </div>
         <div>
             <button id="buttonSend" class="button" onclick="sendForm()">envoyer un e-mail</button>
-            <p id="text"></p>
+         
         </div>
-        
     </div><!--contact form-->
+
 </body>
 </html> 
