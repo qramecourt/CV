@@ -40,7 +40,17 @@ a {
     font-size: large;
     color: white;
 }
-
+.banner{
+    display:grid;
+    grid-template-columns: repeat(4, 2fr);
+    text-align: center;
+    height: 20vh;
+    
+}
+.link:hover {
+    background-color: beige;
+    width: 50vh;
+}
 
 
 
