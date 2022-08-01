@@ -1,4 +1,7 @@
+/*police pour les titres*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/*police pour les boutons*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 body {
     background-color: black;
 }
@@ -7,7 +10,22 @@ button {
     margin-left: 300px;
     width: 100vh;
     height: 25vh;
+    background-color: transparent;
+    border-radius: 3px solid white;
+    border-radius: 50vh;
+    transition: width 1s, background-color 1s, margin-left 1s;
 }
+button:hover {
+    width: 120vh;
+    background-color: red;
+    margin-left: 260px;
+}
+
+button:target {
+    background-color: black;
+    color: red;
+}
+
 h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-style: oblique;
@@ -15,7 +33,16 @@ h1 {
     text-align: center;
     margin-top: 200px;
     color: antiquewhite;
+    
 }
+a {
+    font-family: 'Anton', sans-serif;
+    font-size: large;
+    color: white;
+}
+
+
+
 
 
 
